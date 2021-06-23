@@ -1,0 +1,25 @@
+name: pangeo
+channels:
+ - pytorch
+ - conda-forge
+dependencies:
+ - pangeo-notebook=2021.03.06
+ - python=3.8*
+ - pip=20
+ - pytorch::pytorch
+ - pytorch::torchvision
+ - pytorch::torchaudio
+ - cudatoolkit>=11,<12
+ - efficientnet-pytorch=0.6.3
+ - rasterio
+ - timm
+ - matplotlib-base
+ - adlfs>=0.5.9
+ - xarray
+ - jupyterlab-nvdashboard
+ # https://github.com/holoviz/hvplot/issues/576
+ - hvplot==0.7.0
+ - datashader
+ - numpy
+ - stac-vrt
+ - rioxarray
