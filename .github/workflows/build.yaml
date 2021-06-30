@@ -48,6 +48,3 @@ jobs:
         context: ${{ matrix.IMAGE }}
         tags: pcccr.azurecr.io/public/microsoft/planetary-computer/${{ matrix.IMAGE }}:latest
       if: ${{ steps.changes.outputs.build }}
-
-    - name: push image
-
