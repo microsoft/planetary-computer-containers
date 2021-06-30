@@ -1,8 +1,8 @@
-name: Build
+name: Publish
 on:
   push:
-    branches:
-      - main
+    tags:
+      - '*'
 
 jobs:
   matrix-build:
@@ -25,6 +25,13 @@ jobs:
       id: tags
       run: |
         tag=pcccr.azurecr.io/public/planetary-computer/${{ matrix.IMAGE }}:latest
+
+        GITHUB_TAG=${GITHUB_REF#refs/tags}
+
+        if [ -n ${GITHUB_TAG} ]; then
+          tag="${tag},pcccr.azurecr.io/public/planetary-computer/${{ matrix.IMAGE }}:${GITHUB_TAG}"
+        fi;
+        echo "::set-output name=tag::${tag}"
 
     - name: Check for changes
       id: changes
@@ -49,7 +56,7 @@ jobs:
       id: docker_build
       uses: docker/build-push-action@v2
       with:
-        push: false
+        push: true
         context: ${{ matrix.IMAGE }}
         tags: ${{ steps.tags.outputs.tag }}
       if: ${{ steps.changes.outputs.build == 'true' }}
