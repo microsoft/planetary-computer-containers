@@ -39,7 +39,7 @@ jobs:
     - name: Docker login
       run:
         docker login pcccr.azurecr.io --username ${{ secrets.AZURE_CLIENT_ID}} --password ${{ secrets.AZURE_CLIENT_SECRET }}
-      if: ${{ steps.changes.outputs.build == true }}
+      if: ${{ steps.changes.outputs.build }}
 
     - name: Build and push
       id: docker_build
@@ -48,5 +48,5 @@ jobs:
         push: false
         context: ${{ matrix.IMAGE }}
         tags: pcccr.azurecr.io/public/microsoft/planetary-computer/${{ matrix.IMAGE }}:latest
-      if: ${{ steps.changes.outputs.build == true }}
+      if: ${{ steps.changes.outputs.build }}
 
