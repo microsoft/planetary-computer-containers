@@ -26,6 +26,7 @@ jobs:
       id: changes
       run: |
         if ! git diff --quiet HEAD~ -- ${{ matrix.IMAGE }}; then
+          echo "${{ matrix.IMAGE }} changed, building!"
           echo "::set-output name=build::true"
         else
           echo "::set-output name=build::false"
