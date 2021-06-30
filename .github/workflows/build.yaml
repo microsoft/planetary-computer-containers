@@ -32,20 +32,37 @@ jobs:
           echo "::set-output name=build::false"
         fi
 
-    - name: Set up Docker Buildx
-      uses: docker/setup-buildx-action@v1
+    - name: Check value
+      id: check
+      run: |
+        echo "output: ${{ steps.changes.outputs.build }}"
+
+    - name: Check value
+      id: run_if_true
+      run: |
+        echo "true: ${{ steps.changes.outputs.build }}"
       if: ${{ steps.changes.outputs.build }}
 
-    - name: Docker login
-      run:
-        docker login pcccr.azurecr.io --username ${{ secrets.AZURE_CLIENT_ID}} --password ${{ secrets.AZURE_CLIENT_SECRET }}
-      if: ${{ steps.changes.outputs.build }}
+    - name: Check value
+      id: run_if_false
+      run: |
+        echo "false: ${{ steps.changes.outputs.build }}"
+      if: ~${{ steps.changes.outputs.build }}
 
-    - name: Build image
-      id: docker_build
-      uses: docker/build-push-action@v2
-      with:
-        push: true
-        context: ${{ matrix.IMAGE }}
-        tags: pcccr.azurecr.io/public/microsoft/planetary-computer/${{ matrix.IMAGE }}:latest
-      if: ${{ steps.changes.outputs.build }}
+    # - name: Set up Docker Buildx
+    #   uses: docker/setup-buildx-action@v1
+    #   if: ${{ steps.changes.outputs.build }}
+
+    # - name: Docker login
+    #   run:
+    #     docker login pcccr.azurecr.io --username ${{ secrets.AZURE_CLIENT_ID}} --password ${{ secrets.AZURE_CLIENT_SECRET }}
+    #   if: ${{ steps.changes.outputs.build }}
+
+    # - name: Build image
+    #   id: docker_build
+    #   uses: docker/build-push-action@v2
+    #   with:
+    #     push: true
+    #     context: ${{ matrix.IMAGE }}
+    #     tags: pcccr.azurecr.io/public/microsoft/planetary-computer/${{ matrix.IMAGE }}:latest
+    #   if: ${{ steps.changes.outputs.build }}
