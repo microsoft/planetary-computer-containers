@@ -26,7 +26,7 @@ jobs:
       run: |
         tag=pcccr.azurecr.io/public/planetary-computer/${{ matrix.IMAGE }}:latest
 
-        GITHUB_TAG=${GITHUB_REF#refs/tags}
+        GITHUB_TAG=${GITHUB_REF/refs\/tags\//}
 
         if [ -n ${GITHUB_TAG} ]; then
           tag="${tag},pcccr.azurecr.io/public/planetary-computer/${{ matrix.IMAGE }}:${GITHUB_TAG}"
