@@ -34,6 +34,11 @@ jobs:
           echo "::set-output name=build::true"
         else
           echo "::set-output name=build::false"
+
+        tag=`git name-rev --tags --name-only $(git rev-parse HEAD)`
+        if [ $tag != undefined ]; then
+          echo "Release build $tag. Skipping"
+          echo "::set-output name=build::false"
         fi
 
     - name: Set up Docker Buildx
