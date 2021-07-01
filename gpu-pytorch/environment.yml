@@ -3,8 +3,8 @@ channels:
  - pytorch
  - conda-forge
 dependencies:
- - pangeo-notebook=2021.03.06
  - python=3.8*
+ - pangeo-notebook=2021.06.05
  - pip=20
  - pytorch::pytorch
  - pytorch::torchvision
