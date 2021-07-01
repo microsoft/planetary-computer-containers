@@ -34,6 +34,7 @@ jobs:
           echo "::set-output name=build::true"
         else
           echo "::set-output name=build::false"
+        fi
 
         tag=`git name-rev --tags --name-only $(git rev-parse HEAD)`
         if [ $tag != undefined ]; then
