@@ -56,14 +56,16 @@ dependencies:
  - pandas
  - panel
  - parcels
- - planetary-computer
+ # Install pre-releases from PYPI
+ # - planetary-computer
  - prefect
  - pyarrow
  - pycamhd
  - pydap
  - pygeos
- - pystac
- - pystac-client
+ # Install pre-release from PYPI
+ # - pystac
+ # - pystac-client
  - python-blosc
  - python-gist
  - python-graphviz
