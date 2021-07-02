@@ -1,5 +1,7 @@
 # Planetary Computer Docker Images
 
+![Build status](https://github.com/Microsoft/planetary-computer-containers/actions/workflows/publish.yaml/badge.svg)
+
 This repository contains the docker images definitions for the computing environments available on the [Planetary Computer][pc].
 
 They build on the base image provided by [pangeo][pangeo-docker-images].
