@@ -62,6 +62,7 @@ dependencies:
  - pyarrow
  - pycamhd
  - pydap
+ - pyepsg
  - pygeos
  # Install pre-release from PYPI
  # - pystac
