@@ -1,4 +1,4 @@
 stackstac>=0.2.1
 pystac==1.0.0rc3
 pystac-client>=0.2.0b2
-planetary-computer==0.3.0rc2
+planetary-computer==0.3.0rc3
