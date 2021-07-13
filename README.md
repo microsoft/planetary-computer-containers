@@ -8,3 +8,12 @@ They build on the base image provided by [pangeo][pangeo-docker-images].
 
 [pc]: https://planetarycomputer.microsoft.com/
 [pangeo-docker-images]: https://github.com/pangeo-data/pangeo-docker-images
+
+## Usage
+
+You can pull one of the images from [Microsoft Container Registry](https://github.com/microsoft/ContainerRegistry)
+
+
+```
+$ docker pull mcr.microsoft.com/planetary-computer/python
+```
