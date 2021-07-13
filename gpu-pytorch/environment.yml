@@ -29,5 +29,8 @@ dependencies:
  # - planetary-computer
  - pretrainedmodels==0.7.4
  - segmentation-models-pytorch
+ - shapely
+ - ipyleaflet
+ - scikit-learn
  # For some reason, dask-cuda from conda-forge is causing issues. I haven't debugged yet.
  # - dask-cuda>=21.6.0
