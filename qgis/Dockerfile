@@ -22,12 +22,12 @@ RUN wget 'https://sourceforge.net/projects/turbovnc/files/2.2.5/turbovnc_2.2.5_a
    ln -s /opt/TurboVNC/bin/* /usr/local/bin/
 
 # apt-get may result in root-owned directories/files under $HOME
+COPY qgis.desktop /home/jovyan/.config/autostart/qgis.desktop
 RUN chown -R $NB_UID:$NB_GID $HOME
 
 ADD . /opt/install
 RUN fix-permissions /opt/install
 
 USER $NB_USER
-COPY --chown=jovyan:jovyan qgis.desktop /home/jovyan/.config/autostart/qgis.desktop
 RUN cd /opt/install && \
    conda env update -n base --file environment.yml
