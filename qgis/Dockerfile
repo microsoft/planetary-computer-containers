@@ -28,5 +28,6 @@ ADD . /opt/install
 RUN fix-permissions /opt/install
 
 USER $NB_USER
+COPY --chown=jovyan:jovyan qgis.desktop /home/jovyan/.config/autostart/qgis.desktop
 RUN cd /opt/install && \
    conda env update -n base --file environment.yml
