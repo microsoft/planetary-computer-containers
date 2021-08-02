@@ -23,6 +23,7 @@ dependencies:
  - numpy
  - stac-vrt
  - rioxarray
+ - pystac
  - numba>=0.53.1
  # Install pre-release from PYPI
  # - pystac-client
