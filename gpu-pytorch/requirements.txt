@@ -1,4 +1,2 @@
 dask-cuda
-planetary-computer==0.3.0rc3
-pystac-client>=0.2.0rc1
 stackstac>=0.2.1

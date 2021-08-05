@@ -1,3 +1,1 @@
 stackstac>=0.2.1
-pystac-client>=0.2.0rc1
-planetary-computer==0.3.0rc3

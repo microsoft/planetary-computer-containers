@@ -3,10 +3,10 @@ channels:
  - conda-forge
 dependencies:
  - python=3.8*
- - pangeo-notebook=2021.06.05
- - planetary-computer
- - pystac
- - pystac-client
+ - pangeo-notebook=2021.08.04
+ - planetary-computer>=0.2.2
+ - pystac-client>=0.2.0
+ - pystac>=1.1.0
  - r-base
  - r-caret
  - r-data.table

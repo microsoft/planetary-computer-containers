@@ -3,7 +3,7 @@ channels:
  - conda-forge
 dependencies:
  - python=3.8*
- - pangeo-notebook=2021.08.02
+ - pangeo-notebook=2021.08.04
  - pip=20
  - adlfs
  - awscli
@@ -57,18 +57,15 @@ dependencies:
  - pandas
  - panel
  - parcels
- # Install pre-releases from PYPI
- # - planetary-computer
+ - planetary-computer>=0.2.2
  - prefect
  - pyarrow
  - pycamhd
  - pydap
  - pyepsg
  - pygeos
+ - pystac-client>=0.2.0
  - pystac>=1.1.0
- # Install pre-release from PYPI
- # - pystac
- # - pystac-client
  - python-blosc
  - python-gist
  - python-graphviz

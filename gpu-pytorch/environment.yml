@@ -4,7 +4,7 @@ channels:
  - conda-forge
 dependencies:
  - python=3.8*
- - pangeo-notebook=2021.06.05
+ - pangeo-notebook=2021.08.04
  - pip=20
  - pytorch::pytorch
  - pytorch::torchvision
@@ -23,11 +23,11 @@ dependencies:
  - numpy
  - stac-vrt
  - rioxarray
- - pystac
+ - planetary-computer>=0.2.2
+ - pystac-client>=0.2.0
+ - pystac>=1.1.0
  - numba>=0.53.1
  # Install pre-release from PYPI
- # - pystac-client
- # - planetary-computer
  - pretrainedmodels==0.7.4
  - segmentation-models-pytorch
  - shapely
