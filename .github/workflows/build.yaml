@@ -25,6 +25,7 @@ jobs:
       id: tags
       run: |
         tag=pcccr.azurecr.io/public/planetary-computer/${{ matrix.IMAGE }}:latest
+        echo "::set-output name=tag::${tag}"
 
     - name: Check for changes
       id: changes
@@ -63,5 +64,5 @@ jobs:
     - name: Test image
       id: test
       run:
-        docker run --rm -v $PWD/.github/workflows/scripts:/scripts ${{ steps.tags.outputs.tag }} /scripts/${{ matrix.IMAGE }}
+        docker run --rm -v ${PWD}/.github/workflows/scripts:/scripts ${{ steps.tags.outputs.tag }} /scripts/${{ matrix.IMAGE }}
       if: ${{ steps.changes.outputs.build == 'true' }}
