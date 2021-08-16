@@ -3,7 +3,7 @@ channels:
  - conda-forge
 dependencies:
  - python=3.8*
- - pangeo-notebook=2021.08.04
+ - pangeo-notebook=2021.08.16
  - pip=20
  - adlfs
  - awscli
@@ -11,10 +11,10 @@ dependencies:
  - bottleneck
  - cartopy
  - cfgrib
- - cmip6_preprocessing
  - ciso
- - dask-ml
+ - cmip6_preprocessing
  - dask-geopandas
+ - dask-ml
  - datashader
  - descartes
  - eofs
@@ -35,8 +35,7 @@ dependencies:
  - intake
  - intake-esm
  - intake-geopandas
- # Install pre-release from GitHub
- # - intake-stac
+ # - intake-stac  # install pre-release from GitHub
  - intake-xarray
  - ipyleaflet
  - ipywidgets
@@ -77,16 +76,16 @@ dependencies:
  - sat-search
  - sat-stac
  - satpy
- - seaborn
  - scikit-image
  - scikit-learn
  - scipy
+ - seaborn
  - sparse
  - tiledb-py
- - xarray>=0.18.0
- - xarrayutils
  - xarray_leaflet
  - xarray-spatial>=0.2.7
+ - xarray>=0.18.0
+ - xarrayutils
  - xcape
  - xcube
  - xesmf

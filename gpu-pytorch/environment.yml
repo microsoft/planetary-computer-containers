@@ -4,9 +4,8 @@ channels:
  - conda-forge
 dependencies:
  - python=3.8*
- - pangeo-notebook=2021.08.12
+ - pangeo-notebook=2021.08.16
  - pip=20
- # - intake-stac  # install pre-release from GitHub
  - adlfs
  - awscli
  - boto3
@@ -37,6 +36,7 @@ dependencies:
  - intake
  - intake-esm
  - intake-geopandas
+ # - intake-stac  # install pre-release from GitHub
  - intake-xarray
  - ipyleaflet
  - ipywidgets
@@ -100,13 +100,13 @@ dependencies:
  - zarr
  # GPU packages - most pinned to hashes to help the solver
  - conda-forge::cudatoolkit==11.1.1
+ - conda-forge::torchvision==0.10.0  # from conda-forge, to avoid libjpeg pin issue
  - efficientnet-pytorch
- - hvplot==0.7.0
+ - hvplot==0.7.0  # https://github.com/holoviz/hvplot/issues/576
  - jupyterlab-nvdashboard
  - pretrainedmodels
  - pytorch::pytorch==1.8.1
  - pytorch::torchaudio
- - conda-forge::torchvision==0.10.0  # from conda-forge, to avoid libjpeg issue
  - segmentation-models-pytorch
  - shapely
  - timm
