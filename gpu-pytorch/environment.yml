@@ -4,34 +4,109 @@ channels:
  - conda-forge
 dependencies:
  - python=3.8*
- - pangeo-notebook=2021.08.04
+ - pangeo-notebook=2021.08.16
  - pip=20
- - pytorch::pytorch
- - pytorch::torchvision
- - pytorch::torchaudio
- - cudatoolkit>=11,<12
- - efficientnet-pytorch=0.6.3
- - rasterio
- - timm
- - matplotlib-base
- - adlfs>=0.5.9
- - xarray
- - jupyterlab-nvdashboard
- # https://github.com/holoviz/hvplot/issues/576
- - hvplot==0.7.0
+ - adlfs
+ - awscli
+ - boto3
+ - bottleneck
+ - cartopy
+ - cfgrib
+ - ciso
+ - cmip6_preprocessing
+ - dask-geopandas
+ - dask-ml
  - datashader
+ - descartes
+ - eofs
+ - erddapy
+ - esmpy
+ - fastjmd95
+ - folium
+ - fsspec
+ - gcsfs
+ - geocube
+ - geopandas
+ - geoviews-core
+ - gsw
+ - h5netcdf
+ - h5py
+ - holoviews
+ # - hvplot  # pinned below, regression in >0.7
+ - intake
+ - intake-esm
+ - intake-geopandas
+ # - intake-stac  # install pre-release from GitHub
+ - intake-xarray
+ - ipyleaflet
+ - ipywidgets
+ - jupyter-panel-proxy
+ - jupyter-resource-usage
+ - jupyterlab-geojson
+ - leafmap
+ - lz4
+ - matplotlib-base
+ - metpy
+ - nb_conda_kernels
+ - nbstripout
+ - nc-time-axis
+ - netcdf4
+ # - nomkl  # required by pytorch
+ - numcodecs
  - numpy
- - stac-vrt
- - rioxarray
+ - pandas
+ - panel
+ - parcels
  - planetary-computer>=0.2.2
+ - prefect
+ - pyarrow
+ - pycamhd
+ - pydap
+ - pyepsg
+ - pygeos
  - pystac-client>=0.2.0
  - pystac>=1.1.0
- - numba>=0.53.1
- # Install pre-release from PYPI
- - pretrainedmodels==0.7.4
+ - python-blosc
+ - python-gist
+ - python-graphviz
+ - rasterio
+ - rechunker
+ - rio-cogeo
+ - rioxarray
+ - s3fs>0.5
+ - sat-search
+ - sat-stac
+ - satpy
+ - scikit-image
+ - scikit-learn
+ - scipy
+ - seaborn
+ - sparse
+ - stac-vrt
+ - tiledb-py
+ - xarray-spatial>=0.2.7
+ - xarray>=0.18.0
+ - xarray_leaflet
+ - xarrayutils
+ - xcape
+ - xcube
+ - xesmf
+ - xgcm
+ - xhistogram
+ - xlayers
+ - xmitgcm
+ - xpublish
+ - xrft
+ - zarr
+ # GPU packages - most pinned to hashes to help the solver
+ - conda-forge::cudatoolkit==11.1.1
+ - conda-forge::torchvision==0.10.0  # from conda-forge, to avoid libjpeg pin issue
+ - efficientnet-pytorch
+ - hvplot==0.7.0  # https://github.com/holoviz/hvplot/issues/576
+ - jupyterlab-nvdashboard
+ - pretrainedmodels
+ - pytorch::pytorch==1.8.1
+ - pytorch::torchaudio
  - segmentation-models-pytorch
  - shapely
- - ipyleaflet
- - scikit-learn
- # For some reason, dask-cuda from conda-forge is causing issues. I haven't debugged yet.
- # - dask-cuda>=21.6.0
+ - timm
