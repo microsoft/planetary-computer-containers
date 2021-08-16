@@ -59,3 +59,9 @@ jobs:
         context: ${{ matrix.IMAGE }}
         tags: ${{ steps.tags.outputs.tag }}
       if: ${{ steps.changes.outputs.build == 'true' }}
+
+    - name: Test image
+      id: test
+      run:
+        docker run --rm -v $(PWD)/.github/workflows/scripts:/scripts ${{ steps.tags.outputs.tag }} /scripts/${{ matrix.IMAGE }}
+      if: ${{ steps.changes.outputs.build == 'true' }}
