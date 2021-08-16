@@ -35,7 +35,7 @@ dependencies:
  - intake
  - intake-esm
  - intake-geopandas
- # - intake-stac  # install pre-release from GitHub
+ # - intake-stac  # install pre-release from GitHub.
  - intake-xarray
  - ipyleaflet
  - ipywidgets

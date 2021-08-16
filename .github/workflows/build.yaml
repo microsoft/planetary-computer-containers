@@ -59,10 +59,13 @@ jobs:
         push: false
         context: ${{ matrix.IMAGE }}
         tags: ${{ steps.tags.outputs.tag }}
+        outputs:
+          - type=docker,dest=image.tar
       if: ${{ steps.changes.outputs.build == 'true' }}
 
     - name: Test image
       id: test
-      run:
+      run: |
+        docker load --input image.tar
         docker run --rm -v ${PWD}/.github/workflows/scripts:/scripts ${{ steps.tags.outputs.tag }} /scripts/${{ matrix.IMAGE }}
       if: ${{ steps.changes.outputs.build == 'true' }}
