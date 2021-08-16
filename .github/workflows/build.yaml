@@ -59,8 +59,7 @@ jobs:
         push: false
         context: ${{ matrix.IMAGE }}
         tags: ${{ steps.tags.outputs.tag }}
-        outputs:
-          - type=docker,dest=image.tar
+        outputs: type=docker,dest=image.tar
       if: ${{ steps.changes.outputs.build == 'true' }}
 
     - name: Test image
