@@ -101,6 +101,7 @@ dependencies:
  # GPU packages - most pinned to hashes to help the solver
  - conda-forge::cudatoolkit==11.1.1
  - conda-forge::torchvision==0.10.0  # from conda-forge, to avoid libjpeg pin issue
+ - cupy
  - efficientnet-pytorch
  - hvplot==0.7.0  # https://github.com/holoviz/hvplot/issues/576
  - jupyterlab-nvdashboard
