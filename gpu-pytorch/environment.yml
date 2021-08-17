@@ -100,14 +100,14 @@ dependencies:
  - zarr
  # GPU packages - most pinned to hashes to help the solver
  - conda-forge::cudatoolkit==11.1.1
- - conda-forge::torchvision==0.10.0  # from conda-forge, to avoid libjpeg pin issue
  - cupy
  - efficientnet-pytorch
  - hvplot==0.7.0  # https://github.com/holoviz/hvplot/issues/576
  - jupyterlab-nvdashboard
  - pretrainedmodels
- - pytorch::pytorch==1.8.1
+ - pytorch::pytorch==1.7.0
  - pytorch::torchaudio
+ - pytorch::torchvision==0.8.1
  - segmentation-models-pytorch
  - shapely
  - timm
