@@ -36,7 +36,7 @@ dependencies:
  - intake
  - intake-esm
  - intake-geopandas
- # - intake-stac  # install pre-release from GitHub
+ # - intake-stac  # install pre-release from GitHub.
  - intake-xarray
  - ipyleaflet
  - ipywidgets
@@ -69,7 +69,7 @@ dependencies:
  - python-blosc
  - python-gist
  - python-graphviz
- - rasterio
+ - rasterio>=1.2.3
  - rechunker
  - rio-cogeo
  - rioxarray

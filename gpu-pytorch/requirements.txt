@@ -1,2 +1,2 @@
-dask-cuda
+dask-cuda>=21.10.0a210813
 stackstac>=0.2.1

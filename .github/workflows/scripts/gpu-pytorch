@@ -12,3 +12,4 @@ import dask_gateway
 import torch
 import hvplot
 import cupy
+import dask_cuda
