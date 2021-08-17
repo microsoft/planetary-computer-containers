@@ -11,5 +11,5 @@ import dask_gateway
 # gpu-specific
 import torch
 import hvplot
-import cupy
 import dask_cuda
+# import cupy  # we can't actually touch the GPU, since we don't have one.
