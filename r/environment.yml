@@ -7,6 +7,7 @@ dependencies:
  - planetary-computer>=0.2.2
  - pystac-client>=0.2.0
  - pystac>=1.1.0
+ - r-arrow
  - r-base
  - r-caret
  - r-data.table
