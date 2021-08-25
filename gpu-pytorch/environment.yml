@@ -14,7 +14,7 @@ dependencies:
  - cfgrib
  - ciso
  - cmip6_preprocessing
- - dask-geopandas
+ - contextily
  - dask-ml
  - datashader
  - descartes

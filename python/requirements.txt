@@ -1,1 +1,2 @@
 stackstac>=0.2.1
+dask-geopandas>=0.1.0a4
