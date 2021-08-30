@@ -57,7 +57,7 @@ dependencies:
  - pandas
  - panel
  - parcels
- - planetary-computer>=0.2.2
+ - planetary-computer>=0.4.0
  - prefect
  - pyarrow
  - pycamhd
@@ -84,7 +84,7 @@ dependencies:
  - sparse
  - stac-vrt
  - tiledb-py
- - xarray-spatial>=0.2.7
+ - xarray-spatial>=0.2.8
  - xarray>=0.18.0
  - xarray_leaflet
  - xarrayutils
