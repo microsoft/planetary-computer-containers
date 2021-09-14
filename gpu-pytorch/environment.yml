@@ -4,7 +4,7 @@ channels:
  - conda-forge
 dependencies:
  - python=3.8*
- - pangeo-notebook=2021.08.16
+ - pangeo-notebook=2021.09.08
  - pip=20
  - adlfs
  - awscli
@@ -57,7 +57,7 @@ dependencies:
  - pandas
  - panel
  - parcels
- - planetary-computer>=0.4.0
+ - planetary-computer>=0.4.1
  - prefect
  - pyarrow
  - pycamhd
@@ -84,7 +84,7 @@ dependencies:
  - sparse
  - stac-vrt
  - tiledb-py
- - xarray-spatial>=0.2.8
+ - xarray-spatial>=0.2.9
  - xarray>=0.18.0
  - xarray_leaflet
  - xarrayutils
