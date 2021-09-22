@@ -56,14 +56,14 @@ dependencies:
  - pandas
  - panel
  - parcels
- - planetary-computer>=0.4.1
+ - planetary-computer>=0.4.2
  - prefect
  - pyarrow
  - pycamhd
  - pydap
  - pyepsg
  - pygeos
- - pystac-client>=0.2.0
+#  - pystac-client>=0.2.0  temporarily using pip
  - pystac>=1.1.0
  - python-blosc
  - python-gist
