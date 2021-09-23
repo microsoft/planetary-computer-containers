@@ -1,4 +1,4 @@
-dask-cuda>=21.10.0a210813
+dask-cuda==21.12.0a210922
 stackstac>=0.2.1
 dask-geopandas>=0.1.0a4
 odc-algo>=0.2.0a3

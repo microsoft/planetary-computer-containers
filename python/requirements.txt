@@ -1,5 +1,5 @@
+pystac-client>==0.3.0b1
 stackstac>=0.2.1
 dask-geopandas>=0.1.0a4
 odc-algo>=0.2.0a3
 odc-stac>=0.2.0a6
-pystac-client>==0.3.0b1
