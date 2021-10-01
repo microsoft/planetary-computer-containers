@@ -97,3 +97,6 @@ dependencies:
  - xpublish
  - xrft
  - zarr
+ # Tensorflow packages
+ - pkgs/main/linux-64::tensorflow-gpu>=2 
+ - jax
