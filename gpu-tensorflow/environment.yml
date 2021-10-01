@@ -71,6 +71,7 @@ dependencies:
  - rasterio
  - rechunker
  - rio-cogeo
+ - rio-tiler
  - rioxarray
  - s3fs>0.5
  - sat-search
