@@ -44,7 +44,7 @@ dependencies:
  - r-rgeos
  - r-rlas
  - r-rnetcdf
- - r-rstac
+ - r-rstac>=0.9.1_5
  - r-sf
  - r-signal
  - r-slider
