@@ -1,0 +1,9 @@
+#!/bin/bash
+set -eu
+
+cat <<EOF > /srv/conda/envs/notebook/lib/R/etc/Rprofile.site
+options(
+    repos = c(REPO_NAME = "https://packagemanager.rstudio.com/cran/__linux__/focal/latest"),
+    HTTPUserAgent = "R/4.1.1 R (4.1.1 x86_64-pc-linux-gnu x86_64 linux-gnu)"
+)
+EOF
