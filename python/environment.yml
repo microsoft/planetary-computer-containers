@@ -10,6 +10,9 @@ dependencies:
  - boto3
  - bottleneck
  - cartopy
+ # workaround https://github.com/Azure/azure-sdk-for-python/issues/21516
+ # Can be removed once updated to >=1.19.1
+ - cchardet
  - cfgrib
  - ciso
  - cmip6_preprocessing
