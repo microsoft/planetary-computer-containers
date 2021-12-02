@@ -110,7 +110,9 @@ dependencies:
  - jupyterlab-nvdashboard
  - pretrainedmodels
  - pytorch-gpu
+ - pytorch-lightning
  - segmentation-models-pytorch
  - shapely
  - timm
+ - torchgeo
  - torchvision==0.10.1=py38cuda102h1e64cea_0_cuda
