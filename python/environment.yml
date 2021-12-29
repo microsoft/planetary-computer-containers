@@ -45,7 +45,7 @@ dependencies:
  - jupyter-panel-proxy
  - jupyter-resource-usage
  - jupyterlab-geojson
- - leafmap
+ - leafmap>=0.7.0
  - lz4
  - matplotlib-base
  - metpy
