@@ -102,5 +102,13 @@ dependencies:
  - xpublish
  - xrft
  - zarr
- # JDK needed for Spark
- - openjdk==11.0.9.1
+ # PySpark & RasterFrames dependencies
+ - openjdk=11.0.9.1
+ - pyspark=3.1.2
+ - gdal=3.4*
+ - shapely
+ - rasterio[s3]
+ - rtree
+ # a temporary workaround to load the latest snapshot
+ # - pip:
+    # - https://geotrellis-test.s3.amazonaws.com/raster-frames/pyrasterframes-0.10.1.dev0-py3-none-any.whl
