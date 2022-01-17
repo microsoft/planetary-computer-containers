@@ -5,7 +5,7 @@ dependencies:
  - python=3.8*
  - pangeo-notebook=2021.09.08
  - planetary-computer>=0.4.2
- - pystac-client>=0.3.1
+ - pystac-client>=0.3.2
  - pystac>=1.1.0
  - r-arrow
  - r-base

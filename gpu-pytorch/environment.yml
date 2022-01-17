@@ -68,7 +68,7 @@ dependencies:
  - pydap
  - pyepsg
  - pygeos
- - pystac-client>=0.3.1
+ - pystac-client>=0.3.2
  - pystac>=1.1.0
  - python-blosc
  - python-gist
