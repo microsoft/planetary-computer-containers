@@ -1,0 +1,11 @@
+#!/bin/bash -l
+
+# ==== ONLY EDIT WITHIN THIS BLOCK =====
+
+# The docker image puts the plugin files in /opt/conda/share
+# We move them into the home directory, if the plugin isn't already installed
+mv -vn /opt/conda/share/qgis_stac $HOME/.local/share/QGIS/QGIS3/profiles/default/python/plugins/
+
+# ==== ONLY EDIT WITHIN THIS BLOCK =====
+
+exec "$@"

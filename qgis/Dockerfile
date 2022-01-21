@@ -31,3 +31,7 @@ RUN fix-permissions /opt/install
 USER $NB_USER
 RUN cd /opt/install && \
    conda env update -n base --file environment.yml
+RUN wget https://github.com/stac-utils/qgis-stac-plugin/releases/download/v1.0.0/qgis_stac.1.0.0.zip  && \
+   unzip qgis_stac.1.0.0.zip && \
+   mv qgis_stac /opt/conda/share &&\
+   rm -rf qgis_stac.1.0.0.zip
