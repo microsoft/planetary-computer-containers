@@ -11,7 +11,7 @@ dependencies:
  - bottleneck
  - cartopy
  # workaround https://github.com/Azure/azure-sdk-for-python/issues/21516
- # Can be removed once updated to >=1.19.1
+ # Can be removed once updated
  - cchardet
  - cfgrib
  - ciso
@@ -45,7 +45,7 @@ dependencies:
  - jupyter-panel-proxy
  - jupyter-resource-usage
  - jupyterlab-geojson
- - leafmap>=0.7.0
+ - leafmap
  - lz4
  - matplotlib-base
  - metpy
@@ -58,8 +58,8 @@ dependencies:
  - numpy
  - pandas
  - panel
- - papermill
  - parcels
+ - papermill
  - planetary-computer>=0.4.2
  - prefect
  - pyarrow
@@ -102,3 +102,6 @@ dependencies:
  - xpublish
  - xrft
  - zarr
+ # Tensorflow packages
+ - pkgs/main/linux-64::tensorflow-gpu>=2 
+ - jax

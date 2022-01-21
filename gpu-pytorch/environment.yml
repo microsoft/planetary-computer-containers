@@ -1,36 +1,118 @@
 name: pangeo
 channels:
- - pytorch
  - conda-forge
+ - defaults
 dependencies:
  - python=3.8*
- - pangeo-notebook=2021.06.05
+ - pangeo-notebook=2021.11.23
  - pip=20
- - pytorch::pytorch
- - pytorch::torchvision
- - pytorch::torchaudio
- - cudatoolkit>=11,<12
- - efficientnet-pytorch=0.6.3
- - rasterio
- - timm
- - matplotlib-base
- - adlfs>=0.5.9
- - xarray
- - jupyterlab-nvdashboard
- # https://github.com/holoviz/hvplot/issues/576
- - hvplot==0.7.0
+ - adlfs
+ - awscli
+ - boto3
+ - bottleneck
+ - cartopy
+ # workaround https://github.com/Azure/azure-sdk-for-python/issues/21516
+ # Can be removed once updated
+ - cchardet
+ - cfgrib
+ - ciso
+ - cmip6_preprocessing
+ - contextily
+ - dask-ml
  - datashader
+ - descartes
+ - eofs
+ - erddapy
+ - esmpy
+ - fastjmd95
+ - folium
+ - fsspec
+ - gcsfs
+ - geocube
+ - geopandas
+ - geoviews-core
+ - gsw
+ - h5netcdf
+ - h5py
+ - holoviews
+ - hvplot
+ - intake
+ - intake-esm
+ - intake-geopandas
+ # - intake-stac  # install pre-release from GitHub
+ - intake-xarray
+ - ipyleaflet
+ - ipywidgets
+ - jupyter-panel-proxy
+ - jupyter-resource-usage
+ - jupyterlab-geojson
+ - leafmap
+ - lz4
+ - matplotlib-base
+ - metpy
+ - nb_conda_kernels
+ - nbstripout
+ - nc-time-axis
+ - netcdf4
+#  - nomkl  # we *do* need mkl here.
+ - numcodecs
  - numpy
- - stac-vrt
+ - pandas
+ - panel
+ - papermill
+ - parcels
+ - planetary-computer>=0.4.2
+ - prefect
+ - pyarrow
+ - pycamhd
+ - pydap
+ - pyepsg
+ - pygeos
+ - pystac-client>=0.3.2
+ - pystac>=1.1.0
+ - python-blosc
+ - python-gist
+ - python-graphviz
+ - rasterio
+ - rechunker
+ - rich
+ - rio-cogeo
+ - rio-tiler
  - rioxarray
- - numba>=0.53.1
- # Install pre-release from PYPI
- # - pystac-client
- # - planetary-computer
- - pretrainedmodels==0.7.4
+ - s3fs>0.5
+ - sat-search
+ - sat-stac
+ - satpy
+ - scikit-image
+ - scikit-learn
+ - scipy
+ - seaborn
+ - sparse
+ - stackstac>=0.2.2
+ - tiledb-py
+ - xarray-spatial>=0.2.9
+ - xarray>=0.18.0
+ - xarrayutils
+ - xcape
+ - xcube
+ - xesmf
+ - xgcm
+ - xhistogram
+ - xlayers
+ - xmitgcm
+ - xpublish
+ - xrft
+ - zarr
+ # Additional pytorch / GPU packages
+ - cupy
+ - efficientnet-pytorch
+ - hvplot==0.7.0  # https://github.com/holoviz/hvplot/issues/576
+ - jupyterlab-nvdashboard
+ - pretrainedmodels
+ - pytorch-gpu
+ - pytorch-lightning
  - segmentation-models-pytorch
  - shapely
- - ipyleaflet
- - scikit-learn
- # For some reason, dask-cuda from conda-forge is causing issues. I haven't debugged yet.
- # - dask-cuda>=21.6.0
+ - timm
+ - torchgeo
+ - torchvision==0.10.1=py38cuda102h1e64cea_0_cuda

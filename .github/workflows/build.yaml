@@ -9,7 +9,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        IMAGE: [python, r, gpu-pytorch]
+        IMAGE: [python, r, gpu-pytorch, gpu-tensorflow]
 
     name: ${{ matrix.IMAGE }}
     runs-on: ubuntu-latest
@@ -25,6 +25,7 @@ jobs:
       id: tags
       run: |
         tag=pcccr.azurecr.io/public/planetary-computer/${{ matrix.IMAGE }}:latest
+        echo "::set-output name=tag::${tag}"
 
     - name: Check for changes
       id: changes
@@ -58,4 +59,12 @@ jobs:
         push: false
         context: ${{ matrix.IMAGE }}
         tags: ${{ steps.tags.outputs.tag }}
+        outputs: type=docker,dest=image.tar
+      if: ${{ steps.changes.outputs.build == 'true' }}
+
+    - name: Test image
+      id: test
+      run: |
+        docker load --input image.tar
+        docker run --rm -v ${PWD}/.github/workflows/scripts:/scripts ${{ steps.tags.outputs.tag }} /scripts/${{ matrix.IMAGE }}
       if: ${{ steps.changes.outputs.build == 'true' }}
