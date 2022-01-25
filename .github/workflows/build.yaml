@@ -27,6 +27,12 @@ jobs:
         tag=pcccr.azurecr.io/public/planetary-computer/${{ matrix.IMAGE }}:latest
         echo "::set-output name=tag::${tag}"
 
+    - name: Set the Spark executor tag for docker
+      id: tags_spark
+      run: |
+        tag_spark=pcccr.azurecr.io/public/planetary-computer/${{ matrix.IMAGE }}-spark:latest
+        echo "::set-output name=tags_spark::${tag_spark}"
+
     - name: Check for changes
       id: changes
       run: |
@@ -61,6 +67,15 @@ jobs:
         tags: ${{ steps.tags.outputs.tag }}
         outputs: type=docker,dest=image.tar
       if: ${{ steps.changes.outputs.build == 'true' }}
+
+    - name: Build Spark Executor image
+      run: |
+        cd pyspark/executor && build.sh && \
+        docker tag msft/spark-py:build $TAG_SPARK && \
+        docker push $TAG_SPARK
+      if: ${{ steps.changes.outputs.build == 'true' &&  matrix.IMAGE == 'pyspark'}}
+      env:
+        TAG_SPARK: ${{ steps.tags_spark.outputs.tag_spark }}
 
     - name: Test image
       id: test
