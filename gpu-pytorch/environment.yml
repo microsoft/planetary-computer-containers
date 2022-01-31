@@ -14,13 +14,14 @@ dependencies:
  # workaround https://github.com/Azure/azure-sdk-for-python/issues/21516
  # Can be removed once updated
  - cchardet
- - cfgrib
+ - cfgrib>=0.9.9.1
  - ciso
  - cmip6_preprocessing
  - contextily
  - dask-ml
  - datashader
  - descartes
+ - eccodes>=2.24.2
  - eofs
  - erddapy
  - esmpy
