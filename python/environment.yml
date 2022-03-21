@@ -3,7 +3,7 @@ channels:
  - conda-forge
 dependencies:
  - python=3.8*
- - pangeo-notebook=2021.11.23
+ - pangeo-notebook=2022.03.13
  - pip=20
  - adlfs
  - awscli
@@ -89,7 +89,9 @@ dependencies:
  - seaborn
  - sparse
  - stackstac>=0.2.2
+ - stac-vrt
  - tiledb-py
+ - voila
  - xarray-spatial>=0.2.9
  - xarray>=0.18.0
  - xarrayutils
