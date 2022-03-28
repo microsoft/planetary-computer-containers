@@ -61,7 +61,7 @@ dependencies:
  - panel
  - papermill
  - parcels
- - planetary-computer>=0.4.2
+ - planetary-computer>=0.4.6
  - prefect
  - pyarrow
  - pycamhd
