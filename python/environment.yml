@@ -18,7 +18,9 @@ dependencies:
  - cmip6_preprocessing
  - contextily
  - dask-ml
+ - dask-geopandas
  - datashader
+ - datacube
  - descartes
  - eccodes>=2.24.2
  - eofs
