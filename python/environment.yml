@@ -75,6 +75,7 @@ dependencies:
  - python-blosc
  - python-gist
  - python-graphviz
+ - python-pdal>=3.1.2
  - rasterio
  - rechunker
  - rich

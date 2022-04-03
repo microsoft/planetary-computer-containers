@@ -40,6 +40,8 @@ https://conda.anaconda.org/conda-forge/linux-64/bzip2-1.0.8-h7f98852_4.tar.bz2#a
 https://conda.anaconda.org/conda-forge/linux-64/c-ares-1.18.1-h7f98852_0.tar.bz2#f26ef8098fab1f719c91eb760d63381a
 https://conda.anaconda.org/conda-forge/linux-64/charls-2.3.4-h9c3ff4c_0.tar.bz2#c3f85a96a52befc5e41cab1145c8d3c2
 https://conda.anaconda.org/conda-forge/linux-64/cudatoolkit-10.2.89-h8f6ccaa_10.tar.bz2#49bb1effc91045e2ebf24a8492c2ea13
+https://conda.anaconda.org/conda-forge/linux-64/draco-1.5.2-h924138e_0.tar.bz2#42f91f2c530fc56a745faa800d8abdcf
+https://conda.anaconda.org/conda-forge/linux-64/eigen-3.4.0-h4bd325d_0.tar.bz2#61af675be1ebd2ab75ebc70b8687b84d
 https://conda.anaconda.org/conda-forge/linux-64/expat-2.4.8-h27087fc_0.tar.bz2#e1b07832504eeba765d648389cc387a9
 https://conda.anaconda.org/conda-forge/linux-64/freexl-1.0.6-h7f98852_0.tar.bz2#fb707484f02b122edec5fe3d1f3f552f
 https://conda.anaconda.org/conda-forge/linux-64/fribidi-1.0.10-h36c2ea0_0.tar.bz2#ac7bc6a654f8f41b352b38f4051135f8
@@ -84,6 +86,7 @@ https://conda.anaconda.org/conda-forge/linux-64/lz4-c-1.9.3-h9c3ff4c_1.tar.bz2#f
 https://conda.anaconda.org/conda-forge/linux-64/mpich-4.0.1-h846660c_100.tar.bz2#4b85205b094808088bb0862e08251653
 https://conda.anaconda.org/conda-forge/linux-64/ncurses-6.3-h9c3ff4c_0.tar.bz2#fb31bcb7af058244479ca635d20f0f4a
 https://conda.anaconda.org/conda-forge/linux-64/ninja-1.10.2-h4bd325d_1.tar.bz2#1283461c9985703f86f89655344f7e33
+https://conda.anaconda.org/conda-forge/linux-64/nitro-2.7.dev6-h27087fc_5.tar.bz2#18a745069e7057a03c747e7ff87107a9
 https://repo.anaconda.com/pkgs/main/linux-64/nspr-4.33-h295c915_0.conda#78454e8819eb6701abc74b2ab2889f21
 https://conda.anaconda.org/conda-forge/linux-64/openssl-1.1.1n-h166bdaf_0.tar.bz2#cf0ddbd911fa547e6bc4291ca5e17379
 https://conda.anaconda.org/conda-forge/linux-64/pcre-8.45-h9c3ff4c_0.tar.bz2#c05d1820a6d34ff07aaaab7a9b7eddaa
@@ -223,7 +226,6 @@ https://conda.anaconda.org/conda-forge/noarch/jmespath-1.0.0-pyhd8ed1ab_0.tar.bz
 https://repo.anaconda.com/pkgs/main/noarch/json5-0.9.6-pyhd3eb1b0_0.conda#4e721ee2dbfa20069719d2ee19185031
 https://conda.anaconda.org/conda-forge/noarch/jupyterlab-geojson-3.2.0-pyhd8ed1ab_0.tar.bz2#ad4ec44e5341b1b6144edb932d72435e
 https://conda.anaconda.org/conda-forge/noarch/jupyterlab_widgets-1.1.0-pyhd8ed1ab_0.tar.bz2#e963a4a39cf442dbe5503f66edda083d
-https://conda.anaconda.org/conda-forge/noarch/lark-parser-0.12.0-pyhd8ed1ab_0.tar.bz2#2d1f963b23792b269635b9b32bee1913
 https://conda.anaconda.org/conda-forge/linux-64/libglib-2.70.2-h174f98d_4.tar.bz2#d44314ffae96b17657fbf3f8e47b04fc
 https://conda.anaconda.org/conda-forge/linux-64/libgoogle-cloud-1.35.0-h6945097_2.tar.bz2#cd98869ef2ab424c943dcd3e1d8cd354
 https://conda.anaconda.org/conda-forge/linux-64/libidn2-2.3.2-h7f98852_0.tar.bz2#aca262632226181930c18c0ab2be88eb
@@ -554,6 +556,7 @@ https://conda.anaconda.org/conda-forge/noarch/morecantile-3.1.2-pyhd8ed1ab_0.tar
 https://conda.anaconda.org/conda-forge/noarch/nbconvert-core-6.4.5-pyhd8ed1ab_2.tar.bz2#b9bda22f3d1020336202f0583bb2b390
 https://conda.anaconda.org/conda-forge/noarch/pretrainedmodels-0.7.4-pyhd8ed1ab_2.tar.bz2#ed1ffbcee86a6656baaf64dc830260bf
 https://conda.anaconda.org/conda-forge/linux-64/pyqt-impl-5.12.3-py38h0ffb2e6_8.tar.bz2#acfc7625a212c27f7decdca86fdb2aba
+https://conda.anaconda.org/conda-forge/linux-64/python-pdal-3.1.2-py38h514daf8_0.tar.bz2#9ee163e82eca9ef8dcc66c8870c9a0cb
 https://conda.anaconda.org/conda-forge/noarch/rechunker-0.4.2-pyhd8ed1ab_0.tar.bz2#f3fe0f4a172606b019c240b0dc9a52ac
 https://conda.anaconda.org/conda-forge/noarch/requests-2.27.1-pyhd8ed1ab_0.tar.bz2#7c1c427246b057b8fa97200ecdb2ed62
 https://conda.anaconda.org/conda-forge/noarch/rio-mucho-1.0.0-pyh9f0ad1d_0.tar.bz2#78d7f53344b0c2f0ffed61ba3ccfcefe
@@ -635,7 +638,6 @@ https://conda.anaconda.org/conda-forge/noarch/satpy-0.35.0-pyhd8ed1ab_0.tar.bz2#
 https://conda.anaconda.org/conda-forge/noarch/azure-identity-1.8.0-pyhd8ed1ab_0.tar.bz2#e8e663f6d4a85d1b0725e28288ef8ac5
 https://conda.anaconda.org/conda-forge/noarch/azure-storage-blob-12.11.0-pyhd8ed1ab_0.tar.bz2#c44ed04715aa05f1fbd145de7b77889d
 https://conda.anaconda.org/conda-forge/noarch/dask-kubernetes-2022.1.0-pyhd8ed1ab_0.tar.bz2#3d5b8c0dc8eccd8b2344baff8eafaf47
-https://conda.anaconda.org/conda-forge/noarch/datacube-1.8.6-pyhd8ed1ab_0.tar.bz2#f0200ebd9b0a98049aac6de5dcd91a0f
 https://conda.anaconda.org/conda-forge/noarch/datashader-0.13.0-pyh6c4a22f_0.tar.bz2#bcc353a756d4ad98b97fcc5aa1f9ce4c
 https://conda.anaconda.org/conda-forge/noarch/gcsfs-0.7.2-pyhd8ed1ab_0.tar.bz2#06b237687f879692dccd6a8c0360b32d
 https://conda.anaconda.org/conda-forge/noarch/geocube-0.2.0-pyhd8ed1ab_0.tar.bz2#5a6c6d2db414292f09e99a3e8a5d7fd4
