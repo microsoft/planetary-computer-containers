@@ -15,6 +15,7 @@ dependencies:
  # Can be removed once updated
  - cchardet
  - cfgrib>=0.9.9.1
+ - click=8.0.4
  - ciso
  - cmip6_preprocessing
  - contextily
