@@ -15,6 +15,7 @@ dependencies:
  - cchardet
  - cfgrib>=0.9.9.1
  - ciso
+ - click=8.0.4  # pinned for distributed compatability
  - cmip6_preprocessing
  - contextily
  - dask-ml
