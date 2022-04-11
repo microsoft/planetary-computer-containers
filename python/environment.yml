@@ -28,6 +28,7 @@ dependencies:
  - erddapy
  - esmpy
  - fastjmd95
+ - flox
  - folium
  - fsspec
  - gcsfs
