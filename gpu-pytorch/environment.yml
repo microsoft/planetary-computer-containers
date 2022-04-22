@@ -122,4 +122,4 @@ dependencies:
  - shapely
  - timm
  - torchgeo
- - torchvision==0.10.1=py38cuda102h1e64cea_0_cuda
+ - torchvision==0.11.3=cuda112py38hf46befe_2
