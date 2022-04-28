@@ -1,3 +1,4 @@
 dask-cuda==21.10.0a210813
 odc-algo>=0.2.0a3
 odc-stac>=0.2.0a6
+onnxruntime-gpu>=1.9.0
