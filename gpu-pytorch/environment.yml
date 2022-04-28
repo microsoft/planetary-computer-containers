@@ -83,8 +83,6 @@ dependencies:
  - rioxarray
  - s3fs>0.5
  - sarsen
- - sat-search
- - sat-stac
  - satpy
  - scikit-image
  - scikit-learn
@@ -111,6 +109,7 @@ dependencies:
  - xrft
  - zarr
  # Additional pytorch / GPU packages
+ - python-flatbuffers  # for onxxruntime-gpu
  - cupy
  - efficientnet-pytorch
  - hvplot==0.7.0  # https://github.com/holoviz/hvplot/issues/576

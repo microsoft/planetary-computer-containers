@@ -83,8 +83,6 @@ dependencies:
  - rioxarray
  - s3fs>0.5
  - sarsen
- - sat-search
- - sat-stac
  - satpy
  - scikit-image
  - scikit-learn
