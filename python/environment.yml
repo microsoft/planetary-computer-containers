@@ -10,18 +10,16 @@ dependencies:
  - boto3
  - bottleneck
  - cartopy
- # workaround https://github.com/Azure/azure-sdk-for-python/issues/21516
- # Can be removed once updated to >=1.19.1
- - cchardet
+ - cchardet  # workaround https://github.com/Azure/azure-sdk-for-python/issues/21516
  - cfgrib>=0.9.9.1
  - ciso
  - click=8.0.4
  - cmip6_preprocessing
  - contextily
- - dask-ml
  - dask-geopandas
- - datashader
+ - dask-ml
  - datacube
+ - datashader
  - descartes
  - eccodes>=2.24.2
  - eofs
@@ -43,7 +41,6 @@ dependencies:
  - intake
  - intake-esm
  - intake-geopandas
- # - intake-stac  # install pre-release from GitHub
  - intake-xarray
  - ipyleaflet
  - ipywidgets
@@ -85,6 +82,7 @@ dependencies:
  - rio-tiler
  - rioxarray
  - s3fs>0.5
+ - sarsen
  - sat-search
  - sat-stac
  - satpy
@@ -93,14 +91,16 @@ dependencies:
  - scipy
  - seaborn
  - sparse
- - stackstac>=0.2.2
  - stac-vrt
+ - stackstac>=0.2.2
  - tiledb-py
  - voila
+ - xarray-sentinel
  - xarray-spatial>=0.2.9
  - xarray>=0.18.0
  - xarrayutils
  - xcape
+ - xclim
  - xcube
  - xesmf
  - xgcm
