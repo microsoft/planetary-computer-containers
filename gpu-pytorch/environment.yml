@@ -31,6 +31,7 @@ dependencies:
  - fsspec
  - gcsfs
  - geocube
+ - geogif
  - geopandas
  - geoviews-core
  - gsw
