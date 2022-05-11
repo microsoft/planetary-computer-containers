@@ -1,5 +1,5 @@
+azure-data-tables
 dask-cuda
 odc-algo>=0.2.0a3
 odc-stac>=0.2.0a6
 onnxruntime-gpu>=1.9.0
-azure-data-tables
