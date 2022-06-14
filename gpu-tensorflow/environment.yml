@@ -1,6 +1,7 @@
 name: pangeo
 channels:
  - conda-forge
+ - ngam
 dependencies:
  - python=3*
  - pangeo-notebook=2022.03.13
@@ -106,4 +107,5 @@ dependencies:
  - zarr
  # Tensorflow packages
  - tensorflow==*=*cuda112* 
+ - jaxlib==*=*cuda112*
  - jax
