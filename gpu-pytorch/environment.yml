@@ -4,7 +4,7 @@ channels:
  - defaults
 dependencies:
  - python=3.8*
- - pangeo-notebook=2022.04.18
+ - pangeo-notebook=2022.06.16
  - pip=20
  - adlfs
  - awscli
@@ -32,7 +32,7 @@ dependencies:
  - gcsfs
  - geocube
  - geogif
- - geopandas
+ - geopandas>=0.11.0
  - geoviews-core
  - gsw
  - h5netcdf
