@@ -1,3 +1,3 @@
 %/conda-linux-64.lock: %/environment.yml
 	cd $(dir $<); \
-	mamba lock lock --mamba -p linux-64 -f environment.yml 
+	conda-lock --mamba --kind=explicit -p linux-64 -f environment.yml 
