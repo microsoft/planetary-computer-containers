@@ -2,9 +2,9 @@ name: pangeo
 channels:
  - conda-forge
 dependencies:
- - python=3.8*
- - pangeo-notebook=2022.07.12
- - pip=20
+ - python=3*
+ - pangeo-notebook>=2022.07.12
+ - pip>=20
  - adlfs
  - awscli
  - boto3
@@ -13,7 +13,7 @@ dependencies:
  - cchardet  # workaround https://github.com/Azure/azure-sdk-for-python/issues/21516
  - cfgrib>=0.9.9.1
  - ciso
- - click=8.0.4
+ - click>=8.0.4
  - cmip6_preprocessing
  - contextily
  - dask-geopandas
@@ -70,7 +70,7 @@ dependencies:
  - pydap
  - pyepsg
  - pygeos
- - pystac-client==0.3.5  # https://github.com/stac-utils/pystac-client/issues/237
+ - pystac-client>=0.3.5  # https://github.com/stac-utils/pystac-client/issues/237
  - pystac>=1.1.0
  - python-blosc
  - python-gist
