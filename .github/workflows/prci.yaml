@@ -40,7 +40,6 @@ jobs:
         push: false
         context: ${{ matrix.IMAGE }}
         builder: ${{ steps.buildx.outputs.name }}
-        tags: ghcr.io/${{ github.actor }}/planetary-computer-containers:test
         outputs: type=docker,dest=image.tar
 
     - name: Test image
