@@ -60,6 +60,8 @@ dependencies:
  - numcodecs
  - numpy
  - pandas
+ - odc-algo
+ - odc-stac
  - panel
  - papermill
  - parcels

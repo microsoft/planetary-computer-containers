@@ -59,6 +59,8 @@ dependencies:
  - nomkl
  - numcodecs
  - numpy
+ - odc-algo
+ - odc-stac
  - pandas
  - panel
  - papermill

@@ -17,6 +17,7 @@ dependencies:
  - ciso
  - cmip6_preprocessing
  - contextily
+ - dask-geopandas
  - dask-ml
  - datashader
  - descartes
@@ -56,6 +57,8 @@ dependencies:
  - nomkl
  - numcodecs
  - numpy
+ - odc-algo
+ - odc-stac
  - pandas
  - panel
  - parcels
