@@ -3,11 +3,12 @@ channels:
  - conda-forge
  - defaults
 dependencies:
- - python=3*
+ - python=3.*
  - pangeo-notebook>=2022.06.16
  - pip>=20
  - adlfs
  - awscli
+ - azure-data-tables
  - boto3
  - bottleneck
  - cartopy
@@ -94,6 +95,7 @@ dependencies:
  - seaborn
  - sparse
  - stac-vrt
+ - stac-geoparquet
  - stackstac>=0.2.2
  - tiledb-py
  - voila

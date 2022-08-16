@@ -2,7 +2,7 @@ name: pangeo
 channels:
  - conda-forge
 dependencies:
- - python=3*
+ - python=3.*
  - pangeo-notebook>=2022.03.13
  - pip>=20
  - adlfs

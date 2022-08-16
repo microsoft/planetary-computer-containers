@@ -7,6 +7,7 @@ dependencies:
  - pip>=20
  - adlfs
  - awscli
+ - azure-data-tables
  - boto3
  - bottleneck
  - cartopy
@@ -93,6 +94,7 @@ dependencies:
  - seaborn
  - sparse
  - stac-vrt
+ - stac-geoparquet
  - stackstac>=0.4.2
  - tiledb-py
  - voila
@@ -111,3 +113,4 @@ dependencies:
  - xpublish
  - xrft
  - zarr
+

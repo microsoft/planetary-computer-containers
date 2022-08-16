@@ -1,3 +1,2 @@
-azure-data-tables
 onnxruntime-gpu>=1.9.0
-stac-geoparquet
+

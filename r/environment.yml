@@ -2,8 +2,8 @@ name: pangeo
 channels:
  - conda-forge
 dependencies:
- - python=3.8*
- - pangeo-notebook=2021.09.08
+ - python=3.*
+ - pangeo-notebook>=2021.09.08
  - planetary-computer>=0.4.2
  - pystac-client>=0.3.2
  - pystac>=1.1.0
