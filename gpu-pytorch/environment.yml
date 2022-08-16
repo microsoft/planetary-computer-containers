@@ -128,3 +128,8 @@ dependencies:
  - timm
  - torchgeo
  - torchvision==*=*cuda112*
+ # for onnx stuff
+ - sympy
+ - mpmath
+ - humanfriendly
+ - coloredlogs
