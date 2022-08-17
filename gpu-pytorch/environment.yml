@@ -3,22 +3,20 @@ channels:
  - conda-forge
  - defaults
 dependencies:
- - python=3.*
- - pangeo-notebook>=2022.06.16
- - pip>=20
+ - python=3.8*
+ - pangeo-notebook=2022.06.16
+ - pip=20
  - adlfs
  - awscli
- - azure-data-tables
  - boto3
  - bottleneck
  - cartopy
  - cchardet  # workaround https://github.com/Azure/azure-sdk-for-python/issues/21516
  - cfgrib>=0.9.9.1
  - ciso
- - click>=8.0.4
+ - click=8.0.4
  - cmip6_preprocessing
  - contextily
- - dask-cuda
  - dask-geopandas
  - dask-ml
  - datacube
@@ -62,8 +60,6 @@ dependencies:
  - numcodecs
  - numpy
  - pandas
- - odc-algo
- - odc-stac
  - panel
  - papermill
  - parcels
@@ -95,7 +91,6 @@ dependencies:
  - seaborn
  - sparse
  - stac-vrt
- - stac-geoparquet
  - stackstac>=0.2.2
  - tiledb-py
  - voila
@@ -121,15 +116,10 @@ dependencies:
  - hvplot==0.7.0  # https://github.com/holoviz/hvplot/issues/576
  - jupyterlab-nvdashboard
  - pretrainedmodels
- - pytorch>=1.12.0=*cuda112*
+ - pytorch-gpu
  - pytorch-lightning
  - segmentation-models-pytorch
  - shapely
  - timm
  - torchgeo
- - torchvision==*=*cuda112*
- # for onnx stuff
- - sympy
- - mpmath
- - humanfriendly
- - coloredlogs
+ - torchvision==0.11.3=cuda112py38hf46befe_2
