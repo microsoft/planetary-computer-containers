@@ -1,4 +1,0 @@
-odc-algo>=0.2.0a3
-odc-stac>=0.2.0a6
-azure-data-tables
-stac-geoparquet

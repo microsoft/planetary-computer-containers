@@ -2,11 +2,12 @@ name: pangeo
 channels:
  - conda-forge
 dependencies:
- - python=3.8*
- - pangeo-notebook=2022.07.12
- - pip=20
+ - python=3.*
+ - pangeo-notebook>=2022.07.12
+ - pip>=20
  - adlfs
  - awscli
+ - azure-data-tables
  - boto3
  - bottleneck
  - cartopy
@@ -59,6 +60,8 @@ dependencies:
  - nomkl
  - numcodecs
  - numpy
+ - odc-algo
+ - odc-stac
  - pandas
  - panel
  - papermill
@@ -91,6 +94,7 @@ dependencies:
  - seaborn
  - sparse
  - stac-vrt
+ - stac-geoparquet
  - stackstac>=0.4.2
  - tiledb-py
  - voila
@@ -109,3 +113,4 @@ dependencies:
  - xpublish
  - xrft
  - zarr
+

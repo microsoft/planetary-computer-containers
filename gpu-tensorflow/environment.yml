@@ -2,9 +2,9 @@ name: pangeo
 channels:
  - conda-forge
 dependencies:
- - python=3.8*
- - pangeo-notebook=2022.03.13
- - pip=20
+ - python=3.*
+ - pangeo-notebook>=2022.03.13
+ - pip>=20
  - adlfs
  - awscli
  - boto3
@@ -17,6 +17,7 @@ dependencies:
  - ciso
  - cmip6_preprocessing
  - contextily
+ - dask-geopandas
  - dask-ml
  - datashader
  - descartes
@@ -56,6 +57,8 @@ dependencies:
  - nomkl
  - numcodecs
  - numpy
+ - odc-algo
+ - odc-stac
  - pandas
  - panel
  - parcels
@@ -105,5 +108,6 @@ dependencies:
  - xrft
  - zarr
  # Tensorflow packages
- - pkgs/main/linux-64::tensorflow-gpu>=2 
+ - tensorflow>=2.9.1=*cuda112*
+ - jaxlib==0.3.14=*cuda112*
  - jax
