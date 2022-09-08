@@ -17,6 +17,10 @@ dependencies:
  - click=8.0.4
  - cmip6_preprocessing
  - contextily
+ - dask-cloudprovider
+ - azure-cli-core  # technically too old: https://github.com/conda-forge/azure-cli-core-feedstock/pull/15
+ - msrestazure
+ - azure-identity
  - dask-geopandas
  - dask-ml
  - datacube
@@ -113,4 +117,3 @@ dependencies:
  - xpublish
  - xrft
  - zarr
-
