@@ -136,7 +136,3 @@ dependencies:
  - dask-cuda==22.4.0
  - dask-core==2022.3.0
  - distributed==2022.3.0
- - pip:
-   # https://github.com/dask/dask-cloudprovider/pull/316
-   - azure-mgmt-compute>=18.0.0,<19
-   - azure-mgmt-network>=16.0.0,<17

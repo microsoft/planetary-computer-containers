@@ -115,7 +115,3 @@ dependencies:
  - tensorflow>=2.9.1=*cuda112*
  - jaxlib==0.3.14=*cuda112*
  - jax
- - pip:
-   # https://github.com/dask/dask-cloudprovider/pull/316
-   - azure-mgmt-compute>=18.0.0,<19
-   - azure-mgmt-network>=16.0.0,<17

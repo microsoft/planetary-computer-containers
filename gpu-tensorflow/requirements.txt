@@ -1,3 +1,2 @@
-onnxruntime-gpu>=1.9.0
 azure-mgmt-compute>=18.0.0,<19
 azure-mgmt-network>=16.0.0,<17
