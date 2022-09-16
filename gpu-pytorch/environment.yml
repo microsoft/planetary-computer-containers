@@ -129,7 +129,7 @@ dependencies:
  - torchvision
  - azure-data-tables
  - odc-algo>=0.2.0a3
- - odc-stac>=0.2.0a6
+ - odc-stac>=0.3.2
  - stac-geoparquet
  # resolve dask-cuda issues
  - dask==2022.3.0

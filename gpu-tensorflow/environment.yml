@@ -62,7 +62,7 @@ dependencies:
  - numcodecs
  - numpy
  - odc-algo
- - odc-stac
+ - odc-stac>=0.3.2
  - pandas
  - panel
  - parcels
