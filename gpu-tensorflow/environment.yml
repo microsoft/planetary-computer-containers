@@ -114,6 +114,6 @@ dependencies:
  - zarr
  # Tensorflow packages
  - tensorflow>=2.9.1=*cuda112*
- - jaxlib>=0.3.14=*cuda112*
+ - jaxlib==0.3.14=*cuda112*
  - jax
- - cuda-nvcc
+ - nvidia::cuda-nvcc
