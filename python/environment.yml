@@ -70,6 +70,7 @@ dependencies:
  - panel
  - papermill
  - parcels
+ - pangeo-forge-recipes
  - planetary-computer>=0.4.6
  - prefect
  - pyarrow
