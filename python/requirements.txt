@@ -1,2 +1,3 @@
 azure-mgmt-compute>=18.0.0,<19
 azure-mgmt-network>=16.0.0,<17
+azure-storage-queue
