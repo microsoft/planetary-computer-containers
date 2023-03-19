@@ -3,7 +3,7 @@ channels:
  - conda-forge
 dependencies:
  - python=3.*
- - pangeo-notebook>=2022.11.16
+ - pangeo-notebook>=2023.03.15
  - pip>=20
  - adlfs
  - awscli
