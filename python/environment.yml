@@ -18,6 +18,7 @@ dependencies:
  - cmip6_preprocessing
  - contextily
  - dask-cloudprovider
+ - dask-kubernetes
  - azure-cli-core  # technically too old: https://github.com/conda-forge/azure-cli-core-feedstock/pull/15
  - msrestazure
  - azure-identity
