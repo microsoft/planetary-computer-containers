@@ -72,6 +72,8 @@ dependencies:
  - papermill
  - parcels
  - pangeo-forge-recipes
+ # https://github.com/Ouranosinc/xclim/issues/1216
+ - pint==0.19.2
  - planetary-computer>=0.4.6
  - prefect
  - pyarrow
