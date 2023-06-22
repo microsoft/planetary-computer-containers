@@ -2,7 +2,7 @@ name: pangeo
 channels:
  - conda-forge
 dependencies:
- - python=3.*
+ - python>=3.10.10
  - pangeo-notebook>=2023.03.15
  - pip>=20
  - adlfs
@@ -14,8 +14,7 @@ dependencies:
  - cchardet  # workaround https://github.com/Azure/azure-sdk-for-python/issues/21516
  - cfgrib>=0.9.9.1
  - ciso
- - click=8.0.4
- - cmip6_preprocessing
+ - click
  - contextily
  - dask-cloudprovider
  - dask-kubernetes
@@ -67,13 +66,12 @@ dependencies:
  - numpy
  - odc-algo
  - odc-stac>=0.3.2
- - pandas
+ - pandas>=2.0.0
  - panel
  - papermill
  - parcels
  - pangeo-forge-recipes
- # https://github.com/Ouranosinc/xclim/issues/1216
- - pint==0.19.2
+ - pint
  - planetary-computer>=0.4.6
  - prefect
  - pyarrow
@@ -107,13 +105,14 @@ dependencies:
  - voila
  - xarray-sentinel
  - xarray-spatial>=0.2.9
- - xarray>=0.18.0
+ - xarray>=2023.4.2
  - xarrayutils
  - xcape
- - xclim
+ - xclim>=0.43.0
  - xcube
  - xesmf
  - xgcm
+ - xmip
  - xhistogram
  - xlayers
  - xmitgcm
