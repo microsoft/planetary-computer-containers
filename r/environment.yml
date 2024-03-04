@@ -53,7 +53,7 @@ dependencies:
  - r-spatstat
  - r-spdep
  - r-stars
- - r-sits
+ - r-sits>=1.4.2_1
  - r-terra
  - r-tidync
  - r-tidyverse
