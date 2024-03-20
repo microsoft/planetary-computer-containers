@@ -1,0 +1,4 @@
+dbus-x11
+xorg
+xubuntu-icon-theme
+xfce4
