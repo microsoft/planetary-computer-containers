@@ -1,9 +1,9 @@
 channels:
   - conda-forge
 dependencies:
-  - jupyter-server-proxy>=1.4
+  - jupyter-server-proxy>=4.1.2
   - pip
-  - qgis=3.18
+  - qgis
   - websockify
   - pip:
-      - git+https://github.com/jupyterhub/jupyter-remote-desktop-proxy
+    - jupyter-remote-desktop-proxy

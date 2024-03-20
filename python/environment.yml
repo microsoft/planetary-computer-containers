@@ -52,6 +52,7 @@ dependencies:
  - ipywidgets
  - jupyter-panel-proxy
  - jupyter-resource-usage
+ - jupyter-server-proxy>=4.1.2
  - jupyterlab-geojson
  - leafmap>=0.7.6
  - lz4
