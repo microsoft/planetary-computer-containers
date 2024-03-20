@@ -49,6 +49,7 @@ dependencies:
  - ipyleaflet
  - ipytree
  - ipywidgets
+ - jupyterhub-singleuser
  - jupyterlab_code_formatter
  - jupyterlab-git
  - jupyterlab-myst
