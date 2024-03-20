@@ -3,3 +3,4 @@ RUN wget https://github.com/stac-utils/qgis-stac-plugin/releases/download/v1.0.0
    unzip qgis_stac.1.0.0.zip && \
    mv qgis_stac /srv/conda/envs/notebook/share &&\
    rm -rf qgis_stac.1.0.0.zip
+RUN /srv/conda/envs/notebook/bin/python -m pip install jupyter-remote-desktop-proxy
