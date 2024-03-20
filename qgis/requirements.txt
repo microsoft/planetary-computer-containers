@@ -1,0 +1,1 @@
+jupyter-remote-desktop-proxy==1.2.1

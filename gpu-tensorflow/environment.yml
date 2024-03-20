@@ -1,41 +1,42 @@
 name: pangeo
 channels:
  - conda-forge
- - nvidia
+ - nodefaults
 dependencies:
  - python=3.*
  - pangeo-notebook>=2022.10.31
- - pip>=20
  - adlfs
+ - argopy
  - awscli
+ - black
  - boto3
  - bottleneck
  - cartopy
- # workaround https://github.com/Azure/azure-sdk-for-python/issues/21516
- # Can be removed once updated
- - cchardet
+ - cdsapi
  - cfgrib
+ - cf_xarray
  - ciso
- - cmip6_preprocessing
- - contextily
- - dask-cloudprovider
- - azure-cli-core  # technically too old: https://github.com/conda-forge/azure-cli-core-feedstock/pull/15
- - msrestazure
- - azure-identity
- - dask-geopandas
+ - cmocean
  - dask-ml
+ - dask-cloudprovider
  - datashader
  - descartes
+ - earthaccess
  - eofs
  - erddapy
  - esmpy
  - fastjmd95
- - folium
+ - flox
  - fsspec
+ - gcm_filters
  - gcsfs
+ - gh
+ - gh-scoped-creds
  - geocube
  - geopandas
+ - geopy
  - geoviews-core
+ - git-lfs
  - gsw
  - h5netcdf
  - h5py
@@ -44,76 +45,86 @@ dependencies:
  - intake
  - intake-esm
  - intake-geopandas
- # - intake-stac  # install pre-release from GitHub
+ - intake-stac
  - intake-xarray
+ - ipdb
+ - ipykernel
  - ipyleaflet
+ - ipytree
  - ipywidgets
+ - jupyterlab_code_formatter
+ - jupyterlab-git
+ - jupyterlab-myst
  - jupyter-panel-proxy
  - jupyter-resource-usage
- - jupyterlab-geojson
- - leafmap>=0.7.6
+ - kerchunk
+ - line_profiler
+ - lxml
  - lz4
  - matplotlib-base
+ - memory_profiler
  - metpy
  - nb_conda_kernels
  - nbstripout
  - nc-time-axis
  - netcdf4
- - nomkl
+ - numbagg
  - numcodecs
  - numpy
- - odc-algo
- - odc-stac>=0.3.2
+ - numpy_groupies
+ - odc-stac
  - pandas
  - panel
  - parcels
- - papermill
- - planetary-computer>=0.4.2
- - prefect
+ - param
+ - pop-tools
  - pyarrow
  - pycamhd
  - pydap
- - pyepsg
- - pygeos
- - pystac-client>=0.5.0
- - pystac>=1.1.0
+ - pystac
+ - pystac-client
  - python-blosc
  - python-gist
  - python-graphviz
+ - python-xxhash
  - rasterio
  - rechunker
- - rich
  - rio-cogeo
- - rio-tiler
  - rioxarray
- - s3fs>0.5
- - sat-search
- - sat-stac
+ - s3fs
  - satpy
  - scikit-image
  - scikit-learn
  - scipy
  - seaborn
  - sparse
- - stackstac>=0.2.2
- - stac-vrt
+ - snakeviz
+ - stackstac
  - tiledb-py
- - voila
- - xarray-spatial>=0.2.9
- - xarray>=0.18.0
+ - timezonefinder
+ - watermark
+ - xarray
  - xarrayutils
+ - xarray-datatree
+ - xarray_leaflet
+ - xarray-spatial
+ - xbatcher
  - xcape
- - xcube
+ - xclim
  - xesmf
+ - xgboost
  - xgcm
  - xhistogram
- - xlayers
+ - xmip
  - xmitgcm
  - xpublish
  - xrft
+ - xskillscore
+ - xxhash
  - zarr
- # Tensorflow packages
- - tensorflow>=2.9.1=*cuda112*
- - jaxlib>=0.3.14=*cuda112*
+ # tensorflow
+ - flax
  - jax
- - nvidia::cuda-nvcc
+ - jupyterlab-nvdashboard
+ - keras-cv
+ - tensorflow>=2.14.0=*cuda118*

@@ -3,7 +3,11 @@
 # ==== ONLY EDIT WITHIN THIS BLOCK =====
 # The docker image puts the plugin files in /opt/conda/share
 # We move them into the home directory, if the plugin isn't already installed
-mv -vn /opt/conda/share/qgis_stac $HOME/.local/share/QGIS/QGIS3/profiles/default/python/plugins/
+
+if [ ! -d $HOME/.local/share/QGIS/QGIS3/profiles/default/python/plugins/qgis_stac ]; then
+    mkdir -p $HOME/.local/share/QGIS/QGIS3/profiles/default/python/plugins/
+    mv -vn /srv/conda/envs/notebook/share/qgis_stac $HOME/.local/share/QGIS/QGIS3/profiles/default/python/plugins/
+fi
 
 # ==== ONLY EDIT WITHIN THIS BLOCK =====
 
