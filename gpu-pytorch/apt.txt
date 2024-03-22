@@ -1,3 +1,4 @@
 git
 vim
 tree
+libgl1-mesa-glx
