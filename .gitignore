@@ -116,6 +116,9 @@ ipch/
 # Visual Studio Trace Files
 *.e2e
 
+# VS Code plugins
+.history
+
 # TFS 2012 Local Workspace
 $tf/
 
@@ -348,3 +351,6 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+# Spark files
+pyspark/executor/spark*
